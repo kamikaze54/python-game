@@ -4,7 +4,7 @@ points = 0
 import random
 print("Число загаданно! (От 1 до 6)")
 def game():
-  gen_dig = random.randint(1, 10)
+  gen_dig = random.randint(1, 6)
   points = 0
   popyitka = 5
   while popyitka > 0:
