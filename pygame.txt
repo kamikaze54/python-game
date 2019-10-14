@@ -2,13 +2,13 @@ import random
 dig = 0
 points = 0
 import random
-print("Число загаданно! (От 1 до 6)")
+print("Р§РёСЃР»Рѕ Р·Р°РіР°РґР°РЅРЅРѕ! (РћС‚ 1 РґРѕ 6)")
 def game():
   gen_dig = random.randint(1, 10)
   points = 0
   popyitka = 5
   while popyitka > 0:
-    num = int(input("Введите число: "))
+    num = int(input("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: "))
     if num == 1:
       gen_dig1 =  gen_dig - 1
       points += gen_dig1
@@ -34,14 +34,14 @@ def game():
       points += gen_dig6
       popyitka = popyitka - 1 
     else:
-      print("Нельзя вводить числа больше 6!")
+      print("РќРµР»СЊР·СЏ РІРІРѕРґРёС‚СЊ С‡РёСЃР»Р° Р±РѕР»СЊС€Рµ 6!")
       break
   result = abs(points)
   print(result)
   if result == 25:
-    print("Вау, да Вас прям благославила Фортуна! Вы выиграли!")
+    print("Р’Р°Сѓ, РґР° Р’Р°СЃ РїСЂСЏРј Р±Р»Р°РіРѕСЃР»Р°РІРёР»Р° Р¤РѕСЂС‚СѓРЅР°! Р’С‹ РІС‹РёРіСЂР°Р»Рё!")
   else:
-    print('Оу, Вы набрали меньше чем нужно! В другой раз повезет!')
+    print('РћСѓ, Р’С‹ РЅР°Р±СЂР°Р»Рё РјРµРЅСЊС€Рµ С‡РµРј РЅСѓР¶РЅРѕ! Р’ РґСЂСѓРіРѕР№ СЂР°Р· РїРѕРІРµР·РµС‚!')
      
 
   
