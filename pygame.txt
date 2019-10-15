@@ -7,40 +7,46 @@ def game():
     gen_dig = random.randint(1, 6)
     print("Число загаданно!")
     num = int(input("Введите число (от 1 до 6):  "))
-    if num == 1:
-      gen_dig1 =  gen_dig - 1
-      points += gen_dig1
+    if gen_dig == num:
+      points += 6
       popyitka = popyitka - 1
-    elif num == 2:
-      gen_dig2 =  gen_dig - 2
-      points += gen_dig2
+    elif gen_dig == (num + 1):
+      points += 5
       popyitka = popyitka - 1
-    elif num == 3:
-      gen_dig3 =  gen_dig - 3
-      points += gen_dig3
+    elif gen_dig == (num + 2):
+      points += 4
       popyitka = popyitka - 1
-    elif num == 4:
-      gen_dig4 =  gen_dig - 4
-      points += gen_dig4
+    elif gen_dig == (num + 3):
+      points += 3
       popyitka = popyitka - 1
-    elif num == 5:
-      gen_dig5 =  gen_dig - 5
-      points += gen_dig5
+    elif gen_dig == (num + 4):
+      points += 2
       popyitka = popyitka - 1
-    elif num == 6:
-      gen_dig6 =  gen_dig - 6
-      points += gen_dig6
+    elif gen_dig == (num + 5):
+      points += 1
       popyitka = popyitka - 1 
+    elif gen_dig == num - 5:
+      points += 1
+      popyitka = popyitka - 1
+    elif gen_dig == num - 4:
+      points += 2
+      popyitka = popyitka - 1
+    elif gen_dig == num - 3:
+      points += 3
+      popyitka = popyitka - 1
+    elif gen_dig == num - 2:
+      points += 4
+      popyitka = popyitka - 1
+    elif gen_dig == num - 1:
+      points += 5
+      popyitka = popyitka - 1
     else:
       print("Нельзя вводить числа больше 6!")
       break
   result = abs(points)
   print(result)
-  if result == 25:
+  if result >= 25:
     print("Вау, да Вас прям благославила Фортуна! Вы выиграли!")
   else:
     print('Оу, Вы набрали меньше чем нужно! В другой раз повезет!')
-     
-
-  
 game()
