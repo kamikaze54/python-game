@@ -1,14 +1,12 @@
 import random
-dig = 0
-points = 0
-import random
-print("Число загаданно! (От 1 до 6)")
+print("Игра Лоторея чисел!")
 def game():
-  gen_dig = random.randint(1, 6)
   points = 0
   popyitka = 5
   while popyitka > 0:
-    num = int(input("Введите число: "))
+    gen_dig = random.randint(1, 6)
+    print("Число загаданно!")
+    num = int(input("Введите число (от 1 до 6):  "))
     if num == 1:
       gen_dig1 =  gen_dig - 1
       points += gen_dig1
